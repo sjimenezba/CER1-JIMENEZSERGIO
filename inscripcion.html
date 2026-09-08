@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion - Centro Cultural Puerto Abierto</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="container mt-5"></section>
+    <h2>Inscripcion a Actividades</h2>
+    <p>Completa el siguiente formulario para participar en nuestras actividades</p>
+
+    <form action="#">
+        <!-- Nombre -->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <!-- Correo y Telefono -->
+         <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="correo" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+            <div class="col-md-6">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="telefono" required>
+            </div>
+         </div>
+         <!-- Actividad -->
+          <div class="mb-3">
+            <label for="actividad" class="form-label">Actividad de Interes</label>
+            <select class="form-select" id="actividad" required>
+                <option value="">Selecciona una opcion...</option>
+                <option value="pintura">Taller de Pintura</option>
+                <option value="cueca">Taller de Cueca</option>
+                <option value="volantin">Taller de Volantin</option>
+                <option value="cocina">Taller de Cocina Chilena</option>
+                <option value="trompo">Taller de Trompo</option>
+                <option value="guitarra">Taller de Musica Chilena</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="edad" min="12" required>
+          </div>
+
+          <!-- Comentarios -->
+           <div class="mb-3">
+            <label for="comentarios" class="form-label">Comentarios (Opcional)</label>
+            <textarea class="form-control" id="comentarios" rows="3"></textarea>
+           </div>
+           <!-- Terminos y Condiciones -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="condiciones" required>
+                <label for="condiciones" class="form-check-label">Acepto los terminos y condiciones de participacion</label>
+            </div>
+            
+            <!-- Boton de Submit-->
+             <button type="submit" class="btn btn-primary">Enviar Inscripcion</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
