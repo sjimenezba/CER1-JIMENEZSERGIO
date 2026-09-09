@@ -1,0 +1,2 @@
+azul: #0c3054
+naranja: #cb5e31

@@ -3,60 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Centro Cultural Puerto Abierto</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <header>
-        <h1 id="texto" class="texto1">Centro Cultural Puerto Abierto</h1>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <img src="img/logo-horizontal.png" alt="Logo de Centro Cultural Puerto Abierto" width="300">
+        <nav class="navbar navbar-expand-lg" style="background-color: #cb5e31;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-light" aria-current="page" href="#" >Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <a class="nav-link active text-light" aria-current="page" href="cartelera.html">Cartelera</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link active text-light" aria-current="page" href="inscripcion.html">Inscripcion</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
                 </div>
             </div>
             </nav>
     </header>
     <main>
         <!-- Hero -->
-         <section class="bg-dark text-white text-center py-5">
-            <h1>Bienvenido a <br>Centro Cultural Puerto Abierto</h1>
-            <p>Promoviendo el arte, la cultura y educacion para toda la familia</p>
-            <a href="cartelera.html" class="btn btn-primary">Ver Actividades Disponibles</a>
+         <section class="hero text-white text-center position-relative">
+            <div class="capa-difuminado"></div>
+            <div class="hero-contenido position-relative">
+                <h1>Bienvenido a <br>Centro Cultural Puerto Abierto</h1>
+                <p>Promoviendo el arte, la cultura y educacion para toda la familia</p>
+                <a href="cartelera.html" class="btn btn-primary">Ver Actividades Disponibles</a>
+            </div>
          </section>
          <section class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
                     <h2>Quienes Somos</h2>
                     <p>Bienvenido al Centro Cultural Puerto Abierto, un espacio pensado para el encuentro, la creación y la comunidad. Todo el año desarrollamos una variada cartelera de actividades: talleres, charlas, conciertos y encuentros abiertos a vecinos y visitantes de todas las edades. Nuestras salas de exposición acogen el trabajo de artistas locales y emergentes, ofreciendo miradas frescas sobre la cultura y el arte contemporáneo. Te invitamos a recorrer nuestros espacios, sumarte a nuestras iniciativas y descubrir todo lo que sucede aquí. Puerto Abierto es tu puerto: entra, participa y sé parte de esta comunidad cultural en constante movimiento.</p>
                 </div>
@@ -75,6 +64,7 @@
                         <div class="card-body text-center">
                             <h3>Taller de Cueca</h3>
                             <p>Ven a conocer nuestro taller de cueca</p>
+                            <a href="inscripcion.html" class="btn btn-primary">Inscripcion</a>
                         </div>
                     </div>
                 </div>
@@ -84,6 +74,7 @@
                         <div class="card-body text-center">
                             <h3>Taller de Trompo</h3>
                             <p>Sé el mejor lanzando el trompo!</p>
+                            <a href="inscripcion.html" class="btn btn-primary">Inscripcion</a>
                         </div>
                     </div>
                 </div>
@@ -92,19 +83,27 @@
                         <img src="img/cocina.jpg" alt="" class="card-img-top">
                         <div class="card-body text-center">
                             <h3>Taller de Cocina Chilena</h3>
-                            <p>Aprende las mejores recetas tradicionales chilenas</p>
+                            <p>Aprende las mejores recetas chilenas</p>
+                            <a href="inscripcion.html" class="btn btn-primary">Inscripcion</a>
                         </div>
                     </div>
                 </div>
             </div>
          </section>
     </main>
-    <footer class="bg-light text-end py-4 mt-auto border-top">
-        <div class="container text-light">
-            <h4>Contacto y Ubicacion</h4>
-            <p>📍 Direccion: Avenida Puerto 123, Valparaiso</p>
-            <p>✉️ Correo Electronico: contacto@puertoabierto.cl</p>
-            <p>2026 Centro Cultural Puerto Abierto</p>
+    <footer class="text-end py-4 mt-auto border-top" style="background-color: #cb5e31;">
+        <div class="container px-4 text-light">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="img/logo-horizontal-blanco.png" alt="Logo Centro Cultural Puerto Abierto" width="400">
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h4>Contacto y Ubicacion</h4>
+                    <p>📍 Direccion: Avenida Puerto 123, Valparaiso</p>
+                    <p>✉️ Correo Electronico: contacto@puertoabierto.cl</p>
+                    <p>2026 Centro Cultural Puerto Abierto</p>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
