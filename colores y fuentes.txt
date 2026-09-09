@@ -1,2 +1,4 @@
 azul: #0c3054
 naranja: #cb5e31
+
+tipografia: h1 oswald h2,h3,p,a montserrat
