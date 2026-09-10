@@ -22,10 +22,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="index.html" >Home</a>
+                    <a class="nav-link text-light" aria-current="page" href="index.html" >Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="cartelera.html">Cartelera</a>
+                    <a class="nav-link text-light" aria-current="page" href="cartelera.html">Cartelera</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="#">Inscripcion</a>
@@ -35,67 +35,69 @@
             </div>
             </nav>
     </header>
-    <section class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card p-4 mb-5">
-                    <h2 class="text-center">Inscripcion a Actividades</h2>
-                    <p class="text-center mb-4">Completa el siguiente formulario para participar en uno de nuestros talleres</p>
-                    <!-- FORMULARIO INSCRIPCION -->
-                    <form action="#">
-                        <!-- Nombre -->
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre Completo</label>
-                            <input type="text" class="form-control" id="nombre" required>
-                        </div>
-                        <div class="row mb-3">
-                            <!-- Correo -->
-                            <div class="col-md-6 mb-3 mb-md-0">
-                                <label for="correo" class="form-label">Correo</label>
-                                <input type="email" class="form-control" id="correo" required>
+    <main>
+        <section class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-4 mb-5">
+                        <h1 class="text-center">Inscripcion a Actividades</h1>
+                        <p class="text-center mb-4">Completa el siguiente formulario para participar en uno de nuestros talleres</p>
+                        <!-- FORMULARIO INSCRIPCION -->
+                        <form action="#">
+                            <!-- Nombre -->
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" required>
                             </div>
-                            <!-- Telefono -->
-                            <div class="col-md-6">
-                                <label for="telefono" class="form-label">Telefono</label>
-                                <input type="tel" class="form-control" id="telefono" required>
+                            <div class="row mb-3">
+                                <!-- Correo -->
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="correo" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="correo" required>
+                                </div>
+                                <!-- Telefono -->
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Telefono</label>
+                                    <input type="tel" class="form-control" id="telefono" required>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Actividad -->
-                        <div class="mb-3">
-                            <label for="actividad" class="form-label">Actividad de Interes</label>
-                            <select class="form-select" id="actividad" required>
-                                <option value="">Selecciona una opcion...</option>
-                                <option value="pintura">Taller de Pintura</option>
-                                <option value="cueca">Taller de Cueca</option>
-                                <option value="volantin">Taller de Volantin</option>
-                                <option value="cocina">Taller de Cocina Chilena</option>
-                                <option value="trompo">Taller de Trompo</option>
-                                <option value="guitarra">Taller de Musica Chilena</option>
-                            </select>
-                        </div>
-                        <!-- Edad -->
-                        <div class="mb-3">
-                            <label for="edad" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="edad" min="12" required>
-                        </div>
-                        <!-- Comentarios -->
-                        <div class="mb-3">
-                            <label for="comentarios" class="form-label">Comentarios (Opcional)</label>
-                            <textarea class="form-control" id="comentarios" rows="3"></textarea>
-                        </div>
-                        <!-- Terminos y Condiciones -->
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="condiciones" required>
-                            <label for="condiciones" class="form-check-label">Acepto los terminos y condiciones de participacion</label>
-                        </div>
-                            
-                        <!-- Boton de Submit-->
-                        <button type="submit" class="btn btn-primary">Enviar Inscripcion</button>
-                    </form>
+                            <!-- Actividad -->
+                            <div class="mb-3">
+                                <label for="actividad" class="form-label">Actividad de Interes</label>
+                                <select class="form-select" id="actividad" required>
+                                    <option value="">Selecciona una opcion...</option>
+                                    <option value="pintura">Taller de Pintura</option>
+                                    <option value="cueca">Taller de Cueca</option>
+                                    <option value="volantin">Taller de Volantin</option>
+                                    <option value="cocina">Taller de Cocina Chilena</option>
+                                    <option value="trompo">Taller de Trompo</option>
+                                    <option value="guitarra">Taller de Musica Chilena</option>
+                                </select>
+                            </div>
+                            <!-- Edad -->
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="edad" min="12" required>
+                            </div>
+                            <!-- Comentarios -->
+                            <div class="mb-3">
+                                <label for="comentarios" class="form-label">Comentarios (Opcional)</label>
+                                <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                            </div>
+                            <!-- Terminos y Condiciones -->
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="condiciones" required>
+                                <label for="condiciones" class="form-check-label">Acepto los terminos y condiciones de participacion</label>
+                            </div>
+                                
+                            <!-- Boton de Submit-->
+                            <button type="submit" class="btn btn-primary">Enviar Inscripcion</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="text-end py-4 mt-auto border-top" style="background-color: #cb5e31;">
         <div class="container px-4 text-light">
             <div class="row align-items-center">
